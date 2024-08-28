@@ -66,7 +66,6 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 100%;
   margin-block-end: 12px;
 }
 
@@ -75,10 +74,6 @@ ol {
   height: 386px;
   object-fit: cover;
   object-position: center;
-}
-
-.result__video:focus {
-  outline: none;
 }
 
 .result__video:focus-visible {
@@ -96,8 +91,7 @@ ol {
 }
 
 .search-form__fieldset-title {
-  margin-bottom: 6px;
-  font-family: "Fira Sans Condensed";
+  margin-block-end: 6px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
@@ -107,6 +101,7 @@ ol {
 .search-form__checkbox-list {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -116,27 +111,21 @@ ol {
   align-items: center;
   gap: 5px;
   width: fit-content;
-  font-family: "Fira Sans Condensed";
   font-size: 18px;
   line-height: 22px;
 }
 
 .search-form__textfield {
-  min-width: 225px;
+  width: 225px;
   border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   padding: 0;
   color: inherit;
-  font-family: "Fira Sans Condensed";
   font-size: 18px;
   line-height: 22px;
   background-color: transparent;
   appearance: none;
-}
-
-.search-form__textfield:hover {
-  cursor: text;
 }
 
 .search-form__pseudo-checkbox {
@@ -160,17 +149,11 @@ ol {
   border: 1px solid #fff;
   padding: 6px 0;
   color: #fff;
-  font-family: "Fira Sans Condensed";
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   background-color: transparent;
-}
-
-.button:hover {
-  text-decoration: underline;
-  cursor: pointer;
 }
 
 .search-form__submit-button {
@@ -192,7 +175,7 @@ ol {
 
 .title {
   margin-block-end: 26px;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -224,10 +207,10 @@ ol {
 .content__video-card-title {
   max-width: 200px;
   margin-block-end: 6px;
-  overflow: hidden;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 30px;
   line-height: 100%;
+  overflow: hidden;
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -237,7 +220,6 @@ ol {
   display: -webkit-box;
   max-width: 200px;
   overflow: hidden;
-  font-family: "Fira Sans Condensed";
   font-size: 18px;
   line-height: 16px;
   -webkit-box-orient: vertical;

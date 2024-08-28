@@ -2,6 +2,10 @@
   outline: none;
 }
 
+.search-form__textfield:hover {
+  cursor: text;
+}
+
 .search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
   outline-offset: 1px;
@@ -19,6 +23,11 @@
 .button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: -3px;
+}
+
+.button:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .content__card-link:focus {
