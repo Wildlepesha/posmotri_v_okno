@@ -1,3 +1,8 @@
+.result__video:focus-visible {
+  outline: 1px solid #fff;
+}
+
+
 .search-form__textfield:focus {
   outline: none;
 }
