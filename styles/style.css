@@ -216,7 +216,6 @@ ol {
   width: 399px;
   height: 298px;
   overflow: auto;
-  scrollbar-width: none;
 }
 
 .content__list-item:not(:last-child) {
