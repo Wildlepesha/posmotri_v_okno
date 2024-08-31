@@ -263,7 +263,7 @@ function showMoreCards({
     let urlToFetch = `${initialEndpoint}pagination[page]=${(currentPage += 1)}&`;
     try {
       let data = await (await fetch(urlToFetch)).json();
-      buttonInDOM.parentNode.remove();
+      buttonInDOM.remove();
       cardsOnPageState = cardsOnPageState.concat(data.results);
       appendCards({
         baseUrl,

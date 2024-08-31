@@ -213,10 +213,14 @@ ol {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
   width: 399px;
   height: 298px;
   overflow: auto;
+  scrollbar-width: none;
+}
+
+.content__list-item:not(:last-child) {
+  margin-block-end: 30px;
 }
 
 .content__card-link {
